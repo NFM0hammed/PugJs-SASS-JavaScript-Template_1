@@ -1,0 +1,38 @@
+// Main Color
+$mainColor: rgba(12,12,12,0.9);
+
+// Second Color
+$secondColor: #45489A;
+
+// Width Of Pages
+$pagesWidth: calc(100% - 280px);
+
+// Align Of Pages
+$floatRight: right;
+
+// Padding Section Top, Bottom, Left And Right
+$paddingSection: 40px;
+
+// Padding For All Elements Into Section
+$paddingElements: 10px;
+
+/*
+    Responsive,
+*/
+// Width For Float And Container
+$medium_mobile_width: calc(100% - 35px); // 35px Width For Header To Center All Elements in Medium Screen
+
+// Medium Screen [ Max: 991px ]
+$mediumScreen: "(max-width: 991px)";
+
+// Mobile Screen [ Max: 767px ]
+$mobileScreen: "(max-width: 767px)";
+
+// Large Screen [ Max: 1199px ]
+$largeScreen: "(max-width: 1199px)";
+
+// Large Screen [ Min: 1200px ]
+$minLargeScreen: "(min-width: 1400px)";
+
+// Main Transition
+$transition: all .3s ease-in-out;

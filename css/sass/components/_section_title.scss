@@ -1,0 +1,59 @@
+// Title Of Section
+.section-title
+{
+    display: flex;
+    align-items: center;
+    padding:
+    {
+        left: $paddingElements;
+        right: $paddingElements;
+    };
+    h1
+    {
+        font:
+        {
+            weight: normal;
+            size: 32px;
+        };
+        span
+        {
+            display: block;
+            color: $secondColor;
+            font-weight: 550;
+        }
+    }
+    p
+    {
+        color: #343434;
+        width: 35%;
+        font-size: 15px;
+        line-height: 1.6;
+        margin:
+        {
+            left: 50px;
+        };
+        @media #{$mobileScreen}
+        {
+            &
+            {
+                width: 100%;
+                margin:
+                {
+                    left: auto;
+                    right: auto;
+                };
+            }
+        }
+    }
+    @media #{$mobileScreen}
+    {
+        &
+        {
+            display: block;
+            text:
+            {
+                align: center;
+            };
+        }
+    }
+}

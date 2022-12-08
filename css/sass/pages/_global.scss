@@ -1,0 +1,56 @@
+*
+{
+    @include prefixer(box-sizing, border-box, webkit moz);
+}
+body
+{
+    background-color: #F6F6F6;
+    font:
+    {
+        family: 'Work Sans', sans-serif;
+        size: 18px;
+    };
+}
+ul, ol
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a
+{
+    text-decoration: none;
+}
+.float
+{
+    width: $pagesWidth;
+    float: $floatRight;
+}
+@media #{$mediumScreen}
+{
+    .float
+    {
+        width: $medium_mobile_width;
+    }
+}
+.container
+{
+    padding: $paddingSection;
+}
+@media #{$mediumScreen}
+{
+    .container
+    {
+        width: $medium_mobile_width;
+    }
+}
+@media #{$minLargeScreen}
+{
+    .container
+    {
+        width: 1170px;
+        float: none;
+        margin: auto;
+        padding-left: 280px;
+    }
+}

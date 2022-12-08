@@ -1,0 +1,29 @@
+//- Inherit All Elements From Header Page
+extends ../layout/header
+
+//- Add Featured Page
+append header
+    div(class="featured " + container + dir)
+        div(class=title)
+            h1 Featured #[span Places]
+            p Praesent pellentesque efficitur magna, sed pellentesque neque malesuada vitae
+        .boxes
+            .box
+                img(src="../../imgs/featured_1.jpg")
+                .info
+                    h3 Lorem ipsum dolor
+                    span Proin et sapien
+                    p #1 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed at massa turpis. Fusce ut pretium dui, vitae ullamcorper velit.
+            .box
+                img(src="../../imgs/featured_2.jpg")
+                .info
+                    h3 Phasellus a lacus ac odio
+                    span Maximus
+                    p #2 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed at massa turpis. Fusce ut pretium dui, vitae ullamcorper velit.
+            .box
+                img(src="../../imgs/featured_3.jpg")
+                .info
+                    h3 Proin sit amet fringilla
+                    span Vulputate
+                    p #3 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed at massa turpis. Fusce ut pretium dui, vitae ullamcorper velit.
+    include ../layout/footer

@@ -1,0 +1,75 @@
+.featured
+{
+    .boxes
+    {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        padding:
+        {
+            top: $paddingSection;
+        };
+        .box
+        {
+            img
+            {
+                width: 100%;
+                padding:
+                {
+                    left: $paddingElements;
+                    right: $paddingElements;
+                };
+            }
+            .info
+            {
+                padding:
+                {
+                    left: $paddingElements;
+                    right: $paddingElements;
+                };
+                h3
+                {
+                    font-weight: 500;
+                    margin:
+                    {
+                        bottom: 5px;
+                    };
+                }
+                span
+                {
+                    color: #777;
+                    font:
+                    {
+                        size:  16px;
+                        weight: 500;
+                    }
+                }
+                p
+                {
+                    color: #888;
+                    line-height: 1.7;
+                    font:
+                    {
+                        size: 13px;
+                    }
+                }
+                @media #{$mobileScreen}
+                {
+                    &
+                    {
+                        text:
+                        {
+                            align: center;
+                        };
+                    }
+                }
+            }
+        }
+        @media #{$mobileScreen}
+        {
+            &
+            {
+                display: block;
+            }
+        }
+    }
+}

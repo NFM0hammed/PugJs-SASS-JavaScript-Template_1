@@ -1,0 +1,30 @@
+//- Inherit All Elements From Header Page
+extends ../layout/header
+
+//- Add Blog Entries Page
+append header
+    div(class="blog_entries " + container + dir)
+        div(class=title)
+            h1 Blog #[span Entries]
+            p Praesent pellentesque efficitur magna, sed pellentesque neque malesuada vitae
+        .blogs
+            .blog-entry
+                .blog
+                    img(src="../../imgs/blog_1.jpg", alt="")
+                    .blog-info
+                        h3 Integer ultrices augue
+                        span 25 July 2018
+                        p Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.
+                .blog
+                    img(src="../../imgs/blog_2.jpg", alt="")
+                    .blog-info
+                        h3 Cras commodo odio ut
+                        span 16 July 2018
+                        p Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.
+                .blog
+                    img(src="../../imgs/blog_3.jpg", alt="")
+                    .blog-info
+                        h3 Sed at massa turpis
+                        span 10 July 2018
+                        p Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.
+    include ../layout/footer

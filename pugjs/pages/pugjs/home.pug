@@ -1,0 +1,11 @@
+//- Inherit All Elements From Header Page
+extends ../layout/header
+
+//- Add Home Page
+append header
+    .banner
+        img(src="../../imgs/banner.jpg")
+        .info
+            span Lorem ipsum #[br] dolor
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio quidem itaque adipisci et fugiat vel fuga architecto expedita voluptate aliquid commodi, minima voluptatibus?
+    include ../layout/footer

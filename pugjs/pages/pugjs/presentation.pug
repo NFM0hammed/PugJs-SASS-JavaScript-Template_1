@@ -1,0 +1,11 @@
+//- Inherit All Elements From Header Page
+extends ../layout/header
+
+//- Add Presentation Page
+append header
+    div(class= "presentation " + container + dir)
+        h3 This is a #[span company] presentation.
+        p Praesent pellentesque efficitur magna, sed pellentesque neque malesuada vitae.
+        p In eget ipsum sed lorem vehicula luctus. Curabitur non dolor rhoncus, hendrerit justo sit amet, vestibulum turpis. Pellentesque id auctor tellus, vel ultricies augue. Duis condimentum aliquet blandit. Fusce rhoncus et eros ut pharetra. Phasellus convallis ultricies ligula ac gravida.
+        iframe(class="video" src="https://www.youtube.com/embed/j-_7Ub-Zkow?rel=0&showinfo=0&amp;autoplay=1")
+    include ../layout/footer

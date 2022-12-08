@@ -1,0 +1,87 @@
+.blog_entries
+{
+    .blogs
+    {
+        padding:
+        {
+            top: $paddingSection;
+        };
+        .blog-entry
+        {
+            background-color: #EEE;
+            border:
+            {
+                top: 10px solid $secondColor;
+            };
+            padding: $paddingSection;
+            .blog
+            {
+                display: flex;
+                padding:
+                {
+                    top: $paddingElements;
+                    bottom: $paddingElements;
+                };
+                &:not(:last-child)
+                {
+                    border-bottom: 1px solid #DDD;
+                }
+                .blog-info
+                {
+                    margin:
+                    {
+                        left: 30px;
+                    };
+                    h3
+                    {
+                        font:
+                        {
+                            size: 22px;
+                            weight: 500;
+                        };
+                        margin:
+                        {
+                            bottom: 5px;
+                        };
+                    }
+                    span
+                    {
+                        color: #777;
+                        font:
+                        {
+                            size: 16px;
+                            weight: 500;
+                        }
+                    }
+                    p
+                    {
+                        color: #777;
+                        font: 
+                        {
+                            size: 13px;
+                        }
+                        line-height: 1.8;
+                    }
+                    @media #{$mobileScreen}
+                    {
+                        &
+                        {
+                            margin: auto;
+                        }
+                    }
+                }
+                @media #{$mobileScreen}
+                {
+                    &
+                    {
+                        flex-direction: column;
+                        text:
+                        {
+                            align: center;
+                        };
+                    }
+                }
+            }
+        }
+    }
+}

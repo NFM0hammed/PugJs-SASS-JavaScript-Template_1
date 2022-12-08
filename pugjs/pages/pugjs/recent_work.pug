@@ -1,0 +1,19 @@
+//- Inherit All Elements From Header Page
+extends ../layout/header
+
+//- Add Recent Work Page
+append header
+    div(class="recent-work " + container + dir)
+        div(class=title)
+            h1 Recent #[span Projects]
+            p Praesent pellentesque efficitur magna, sed pellentesque neque malesuada vitae
+        .box-01
+            .img-1
+                img(src="../../imgs/portfolio_1.jpg", alt="")
+            .img-2
+                img(src="../../imgs/portfolio_2.jpg", alt="")
+                img(src="../../imgs/portfolio_3.jpg", alt="")
+        .box-02
+            img(src="../../imgs/portfolio_4.jpg", alt="")
+            img(src="../../imgs/portfolio_5.jpg", alt="")
+    include ../layout/footer

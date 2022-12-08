@@ -1,0 +1,20 @@
+//- Header Page
+doctype
+//- Include Mixins
+include ../helpers/mixins
+//- Include Variables
+include ../helpers/variables
+html
+    head
+        //- Include Head Part
+        include ../components/head
+    body
+        block header
+            .header
+                .logo
+                    h3 SEN#[span TRA]
+                .menu
+                    +lists(6,
+                    ["fa-house", "fa-place-of-worship", "fa-briefcase", "fa-person-chalkboard", "fa-blog", "fa-address-book"],
+                    ["Home", "Featured", "Recent Work", "Presentation", "Blog Entries", "Contact Us"],
+                    ["home", "featured", "recent_work", "presentation", "blog_entries", "contact_us"])

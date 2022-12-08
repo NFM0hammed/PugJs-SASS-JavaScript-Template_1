@@ -1,0 +1,5 @@
+//- Mixin For Create Lists
+mixin lists(num, icon, listName, link)
+    ul
+        - for(let i = 0; i < num; i++)
+            a(href=link[i] + ".html") #[i(class="fa-solid " + icon[i] + " icon")] #[i(class="fa-regular fa-circle circle")] #[li= listName[i]]

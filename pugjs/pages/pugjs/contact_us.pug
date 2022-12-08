@@ -1,0 +1,18 @@
+//- Inherit All Elements From Header Page
+extends ../layout/header
+
+//- Add Contact Us Page
+append header
+    div(class="contact_us " + container + dir)
+        div(class=title)
+            h1 Contact #[span Sentra]
+            p Praesent pellentesque efficitur magna, sed pellentesque neque malesuada vitae
+        .form
+            form
+                .inputs
+                    input(type="text" placeholder="Your name...")
+                    input(type="email" placeholder="Your email...")
+                    input(type="text" placeholder="Subject...")
+                textarea(placeholder="Your Message...")
+                button Send Message Now
+    include ../layout/footer

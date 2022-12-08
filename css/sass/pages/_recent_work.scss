@@ -1,0 +1,75 @@
+.recent-work
+{
+    img
+    {
+        padding:
+        {
+            bottom: $paddingElements;
+            left: $paddingElements;
+            right: $paddingElements;
+        };
+        transition: $transition;
+        &:hover
+        {
+            opacity: .5;
+        }
+        @media #{$largeScreen}
+        {
+            &
+            {
+                width: 100%;
+            }
+        }
+    }
+    .box-01 .img-1 img,
+    .box-02 img:last-child
+    {
+        width: 577px;
+        @media #{$largeScreen}
+        {
+            &
+            {
+                width: 100%;
+            }
+        }
+    }
+    .box-01
+    {
+        display: flex;
+        padding:
+        {
+            top: $paddingSection;
+        };
+        .img-1
+        {
+            img
+            {
+                height: 100%;
+            }
+        }
+        .img-2
+        {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        @media #{$largeScreen}
+        {
+            &
+            {
+                display: block;
+            }
+        }
+    }
+    .box-02
+    {
+        display: flex;
+        @media #{$largeScreen}
+        {
+            &
+            {
+                display: block;
+            }
+        }
+    }
+}
